@@ -89,7 +89,7 @@ function buildCarousel(urls, activeIndex) {
     for (let i = 0; i < images.length; i++) {
         const url = urls[i];
         const imageClass = i === activeIndex ? 'carousel-img active' : 'carousel-img'
-        content += `<img class="${imageClass}" src="${images[i].url}" alt="${url}" />`;
+        content += `<img class="${imageClass}" src="${images[i].url}" alt="${images[i].description}" />`;
     }
     // console.log({content});
     carouselImages.innerHTML = content;
